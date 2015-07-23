@@ -1,5 +1,5 @@
 {
-    "name": "jquery.limarquee",
+    "name": "jquery.liMarquee",
     "version": "4.6",
     "main": "ls/jquery.liMarquee.js",
     "ignore": [
