@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>liMarquee</title>
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet" href="css/liMarquee.css">
+<script src="js/jquery-1.9.0.min.js"></script>
+<script src="js/jquery.liMarquee.js"></script>
+<script>
+$(window).load(function(){
+	$('.str4').liMarquee({
+		direction: 'up'	
+	});
+	var newContent = '<p>new content new content new content new content new content new content new content new </p>'
+        
+	$('.addContent').on('click',function(){
+		$('.str_origin',$('.str4')).html( $('.str_origin',$('.str4')).html() + newContent);
+		$('.str4').liMarquee('update');
+		return false;
+	})
+	
+	$('.removeContent').on('click',function(){
+	   $('p',$('.str4')).eq(0).remove();
+		$('.str4').liMarquee('update');
+		return false;
+	})
+})
+</script> 
+</head>
+<body>
+
+<div class="conteiner">
+<h3>liMarquee - jQuery Marquee или бегущая строка на jQuery</h3>
+<div class="navPr">
+	<a href="index.html">Демо</a>
+    <span>Использование метода "update"</span>
+</div>
+
+<fieldset>
+    <legend>Результат</legend>		
+    <div class="str4 str_wrap" style="height:200px;">
+        <p>И с другом и с врагом ты должен быть хорош!</p>
+
+    </div>
+    
+    <a class="addContent" href="">add content</a>
+	<a class="removeContent" href="">remove content</a>
+</fieldset> 
+
+<fieldset>
+    <legend>Подключаемые файлы</legend>		
+    <pre><xmp>
+<link rel="stylesheet" href="css/liMarquee.css">
+<script src="js/jquery-1.9.0.min.js"></script>
+<script src="js/jquery.liMarquee.js"></script>
+    </xmp></pre>
+</fieldset> 
+
+<fieldset>
+    <legend>Инициализация плагина</legend>		
+    <pre><xmp>
+<script>
+$(window).load(function(){
+	$('.str4').liMarquee({
+		direction: 'up'	
+	});
+	
+	var newContent = '<p>new content new content new content new content new content new content new content new </p>'
+        
+	$('.addContent').on('click',function(){
+		$('.str_origin',$('.str4')).html( $('.str_origin',$('.str4')).html() + newContent);
+		$('.str4').liMarquee('update')
+		return false;
+	})
+	
+	$('.removeContent').on('click',function(){
+	   $('p',$('.str4')).eq(0).remove();
+		$('.str4').liMarquee('update')
+		return false;
+	})
+	
+})
+</script> 
+    </xmp></pre>
+</fieldset>
+
+<fieldset>
+    <legend>Код HTML</legend>		
+    <pre><xmp>
+<div class="str4 str_wrap" style="height:200px;">
+    <p>И с другом и с врагом ты должен быть хорош!</p>
+    <p>Кто по натуре добр, в том злобы не найдешь.</p>
+    <p>Обидишь друга — наживешь врага ты,</p>
+    <p>Врага обнимешь — друга обретешь.</p>
+    <p>Омар Хайям</p>
+</div>
+
+<a class="addContent" href="">add content</a>
+<a class="removeContent" href="">remove content</a>
+    </xmp></pre>
+</fieldset>
+
+</div>   
+
+<div class="autor">
+    <a class="logoMasscode" target="_blank" href="http://masscode.ru">
+    	<span class="logoMass">MASS</span>CODE<span class="logoMass">.RU</span>
+    </a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>liMarquee</title>
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet" href="css/liMarquee.css">
+<script src="js/jquery-1.9.0.min.js"></script>
+<script src="js/jquery.liMarquee.js"></script>
+<script>
+$(window).load(function(){
+	var stringEl = $('.str1').liMarquee();
+	$('.speedChange').on('click',function(){
+		var speedChange = $(this);
+		var dataSpeed = speedChange.data('scrollamount');
+
+		stringEl.trigger('mouseenter');
+		stringEl.data({scrollamount:dataSpeed});
+		stringEl.trigger('mouseleave');
+		
+		return false;	
+	})
+})
+</script> 
+
+</head>
+<body>
+
+<div class="conteiner">
+<h3>liMarquee - jQuery Marquee или бегущая строка на jQuery</h3>
+<div class="navPr">
+	<a href="index.html">Демо</a>
+    <span>Параметры по умолчанию</span>
+</div>
+
+<fieldset>
+    <legend>Результат</legend>		
+   
+	<div class="str1 str_wrap">
+		Будь собой! Если казаться не тем, кто ты на самом деле, можно получить не ту работу, не тех друзей, не свою любовь и вообще, не свою жизнь. 
+	</div>
+
+	<a class="speedChange" data-scrollamount="30" href="#">Медленно (30px/sec)</a>
+	<a class="speedChange" data-scrollamount="90" href="#">Нормально (90px/sec)</a>
+	<a class="speedChange" data-scrollamount="250" href="#">Быстро (250px/sec)</a>
+
+   
+</fieldset> 
+
+<fieldset>
+    <legend>Подключаемые файлы</legend>		
+    <pre><xmp>
+<link rel="stylesheet" href="css/liMarquee.css">
+<script src="js/jquery-1.9.0.min.js"></script>
+<script src="js/jquery.liMarquee.js"></script>
+    </xmp></pre>
+</fieldset> 
+
+<fieldset>
+    <legend>Инициализация плагина</legend>		
+    <pre><xmp>
+<script>
+$(window).load(function(){
+var stringEl = $('.str1').liMarquee();
+$('.speedChange').on('click',function(){
+	var speedChange = $(this);
+	var dataSpeed = speedChange.data('scrollamount');
+
+	stringEl.trigger('mouseenter');
+	stringEl.data({scrollamount:dataSpeed});
+	stringEl.trigger('mouseleave');
+	
+	return false;	
+})
+})
+</script> 
+    </xmp></pre>
+</fieldset>
+
+<fieldset>
+    <legend>Код HTML</legend>		
+    <pre><xmp>
+<div class="str1 str_wrap">
+    Будь собой! Если казаться не тем, кто ты на самом деле, можно получить не ту работу, не тех друзей, не свою любовь и вообще, не свою жизнь.
+</div>
+<a class="speedChange" data-scrollamount="30" href="#">Медленно (30px/sec)</a>
+<a class="speedChange" data-scrollamount="90" href="#">Нормально (90px/sec)</a>
+<a class="speedChange" data-scrollamount="250" href="#">Быстро (250px/sec)</a>
+    </xmp></pre>
+</fieldset>
+
+</div>   
+
+<div class="autor">
+    <a class="logoMasscode" target="_blank" href="http://masscode.ru">
+    	<span class="logoMass">MASS</span>CODE<span class="logoMass">.RU</span>
+    </a>
+</div>
+
+</body>
+</html>

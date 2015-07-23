@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>liMarquee</title>
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet" href="css/liMarquee.css">
+<script src="js/jquery-1.9.0.min.js"></script>
+<script src="js/jquery.liMarquee.js"></script>
+<script>
+$(window).load(function(){
+	$('.str3-2').liMarquee();
+})
+</script> 
+<style>
+.str3 { font-size:0 !important}
+.str3-2 { background:none !important;}
+.str3-2 span { border:5px solid #ccc; background:#f1f1f1; color:#999; margin:0 5px; text-align:center; font:40px/100px Arial, Helvetica, sans-serif; width:100px; height:100px; display:inline-block; vertical-align:top;}
+</style>
+</head>
+<body>
+
+<div class="conteiner">
+<h3>liMarquee - jQuery Marquee или бегущая строка на jQuery</h3>
+<div class="navPr">
+	<a href="index.html">Демо</a>
+    <span>Бегущая строка с html кодом</span>
+</div>
+
+<fieldset>
+    <legend>Результат</legend>		
+    <div class="str3-2 str_wrap">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+        <span>7</span>
+        <span>8</span>
+        <span>9</span>
+        <span>0</span>
+    </div>
+</fieldset> 
+
+<fieldset>
+    <legend>Подключаемые файлы</legend>		
+    <pre><xmp>
+<link rel="stylesheet" href="css/liMarquee.css">
+<script src="js/jquery-1.9.0.min.js"></script>
+<script src="js/jquery.liMarquee.js"></script>
+    </xmp></pre>
+</fieldset> 
+
+<fieldset>
+    <legend>Инициализация плагина</legend>		
+    <pre><xmp>
+<script>
+$(window).load(function(){
+	$('.str3-2').liMarquee();
+})
+</script> 
+    </xmp></pre>
+</fieldset>
+
+<fieldset>
+    <legend>Код HTML</legend>		
+    <pre><xmp>
+<div class="str3-2 str_wrap">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+    <span>5</span>
+    <span>6</span>
+    <span>7</span>
+    <span>8</span>
+    <span>9</span>
+    <span>0</span>
+</div>
+    </xmp></pre>
+</fieldset>
+
+</div>   
+
+<div class="autor">
+    <a class="logoMasscode" target="_blank" href="http://masscode.ru">
+    	<span class="logoMass">MASS</span>CODE<span class="logoMass">.RU</span>
+    </a>
+</div>
+
+</body>
+</html>
