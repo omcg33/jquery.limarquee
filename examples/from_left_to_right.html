@@ -3,15 +3,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>liMarquee</title>
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="../css/style.css">
 
-<link rel="stylesheet" href="css/liMarquee.css">
+<link rel="stylesheet" href="../css/liMarquee.css">
 <script src="js/jquery-1.9.0.min.js"></script>
-<script src="js/jquery.liMarquee.js"></script>
+<script src="../js/jquery.liMarquee.js"></script>
 <script>
 $(window).load(function(){
-	$('.str2').liMarquee({	
-		drag: false
+	$('.str9').liMarquee({
+		direction: 'right'	
 	});
 })
 </script> 
@@ -23,23 +23,23 @@ $(window).load(function(){
 <h3>liMarquee - jQuery Marquee или бегущая строка на jQuery</h3>
 <div class="navPr">
 	<a href="index.html">Демо</a>
-    <span>Отключена возможность draggable (перетаскивания)</span>
+    <span>Движение слева на право</span>
 </div>
 
 <fieldset>
     <legend>Результат</legend>		
    
-    <div class="str2 str_wrap">
-        Живи так, как хочешь ты, а не как ожидают от тебя другие. Не важно оправдаешь ты их ожидания или нет, умирать ты будешь без них. И свои победы одержишь сам! © Конфуций
+    <div class="str9 str_wrap">
+        Проблема в том, что, не рискуя, мы рискуем в сто раз больше. © Марк Аврелий
     </div>
 </fieldset> 
 
 <fieldset>
     <legend>Подключаемые файлы</legend>		
     <pre><xmp>
-<link rel="stylesheet" href="css/liMarquee.css">
+<link rel="stylesheet" href="../css/liMarquee.css">
 <script src="js/jquery-1.9.0.min.js"></script>
-<script src="js/jquery.liMarquee.js"></script>
+<script src="../js/jquery.liMarquee.js"></script>
     </xmp></pre>
 </fieldset> 
 
@@ -48,8 +48,8 @@ $(window).load(function(){
     <pre><xmp>
 <script>
 $(window).load(function(){
-	$('.str2').liMarquee({
-		drag: false	
+	$('.str9').liMarquee({
+		direction: 'right'	
 	});
 })
 </script> 
@@ -59,8 +59,8 @@ $(window).load(function(){
 <fieldset>
     <legend>Код HTML</legend>		
     <pre><xmp>
-<div class="str2 str_wrap">
-    Живи так, как хочешь ты, а не как ожидают от тебя другие. Не важно оправдаешь ты их ожидания или нет, умирать ты будешь без них. И свои победы одержишь сам! © Конфуций
+<div class="str9 str_wrap">
+    Проблема в том, что, не рискуя, мы рискуем в сто раз больше. © Марк Аврелий
 </div>
     </xmp></pre>
 </fieldset>
