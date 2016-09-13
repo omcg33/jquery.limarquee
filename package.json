@@ -1,0 +1,31 @@
+{
+  "name": "jquery.limarquee",
+  "version": "4.6.0",
+  "description": "A jQuery plugin that help you made running content",
+  "main": "js/jquery.liMarquee.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omcg33/jquery.limarquee.git"
+  },
+  "keywords": [
+    "marquee",
+    "text",
+    "slider",
+    "limarquee"
+  ],
+  "author": "Linnik Yura",
+  "license": "SEE LICENSE IN js/jquery.liMarquee.js",
+  "bugs": {
+    "url": "https://github.com/omcg33/jquery.limarquee/issues"
+  },
+  "homepage": "https://github.com/omcg33/jquery.limarquee#readme",
+  "dependencies": {
+    "jquery": "^1.9||^2.0"
+  }
+}
