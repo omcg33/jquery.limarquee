@@ -270,20 +270,22 @@
 										return time;
 									};
 								var moveFunc = function () {
-									var leftPos = -strMove.width();
-									strMove.animate({
-										left: leftPos
-									}, timeFunc(), 'linear', function () {
-										$(this).css({
-											left: strWrap.width()
+									if (loop != 0) {
+										var leftPos = -strMove.width();
+										strMove.animate({
+											left: leftPos
+										}, timeFunc(), 'linear', function () {
+											$(this).css({
+												left: strWrap.width()
+											});
+											if (loop == -1) {
+												setTimeout(moveFunc, p.scrolldelay);
+											} else {
+												loop--;
+												setTimeout(moveFunc, p.scrolldelay);
+											}
 										});
-										if (loop == -1) {
-											setTimeout(moveFunc, p.scrolldelay);
-										} else {
-											loop--;
-											setTimeout(moveFunc, p.scrolldelay);
-										}
-									});
+									}
 								};
 								strWrap.data({
 									moveF : moveFunc
@@ -534,20 +536,22 @@
 									return time;
 								};
 								var moveFunc = function () {
-									var leftPos = strWrap.width();
-									strMove.animate({
-										left: leftPos
-									}, timeFunc(), 'linear', function () {
-										$(this).css({
-											left: -strMove.width()
+									if (loop != 0) {
+										var leftPos = strWrap.width();
+										strMove.animate({
+											left: leftPos
+										}, timeFunc(), 'linear', function () {
+											$(this).css({
+												left: -strMove.width()
+											});
+											if (loop == -1) {
+												setTimeout(moveFunc, p.scrolldelay);
+											} else {
+												loop--;
+												setTimeout(moveFunc, p.scrolldelay);
+											};
 										});
-										if (loop == -1) {
-											setTimeout(moveFunc, p.scrolldelay);
-										} else {
-											loop--;
-											setTimeout(moveFunc, p.scrolldelay);
-										};
-									});
+									}
 								};
 
 								strWrap.data({
@@ -808,20 +812,22 @@
 									return time;
 								};
 								var moveFunc = function () {
-									var topPos = -strMove.height();
-									strMove.animate({
-										top: topPos
-									}, timeFunc(), 'linear', function () {
-										$(this).css({
-											top: strWrap.height()
+									if (loop != 0) {
+										var topPos = -strMove.height();
+										strMove.animate({
+											top: topPos
+										}, timeFunc(), 'linear', function () {
+											$(this).css({
+												top: strWrap.height()
+											});
+											if (loop == -1) {
+												setTimeout(moveFunc, p.scrolldelay);
+											} else {
+												loop--;
+												setTimeout(moveFunc, p.scrolldelay);
+											};
 										});
-										if (loop == -1) {
-											setTimeout(moveFunc, p.scrolldelay);
-										} else {
-											loop--;
-											setTimeout(moveFunc, p.scrolldelay);
-										};
-									});
+									}
 								};
 								strWrap.data({
 									moveF : moveFunc
@@ -1074,20 +1080,22 @@
 									return time;
 								};
 								var moveFunc = function () {
-									var topPos = strWrap.height();
-									strMove.animate({
-										top: topPos
-									}, timeFunc(), 'linear', function () {
-										$(this).css({
-											top: -strMove.height()
+									if (loop != 0) {
+										var topPos = strWrap.height();
+										strMove.animate({
+											top: topPos
+										}, timeFunc(), 'linear', function () {
+											$(this).css({
+												top: -strMove.height()
+											});
+											if (loop == -1) {
+												setTimeout(moveFunc, p.scrolldelay);
+											} else {
+												loop--;
+												setTimeout(moveFunc, p.scrolldelay);
+											};
 										});
-										if (loop == -1) {
-											setTimeout(moveFunc, p.scrolldelay);
-										} else {
-											loop--;
-											setTimeout(moveFunc, p.scrolldelay);
-										};
-									});
+									}
 								};
 								strWrap.data({
 									moveF : moveFunc
